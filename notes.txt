@@ -18,3 +18,6 @@ least significant.
 6. Adapting radix sort to work with characters was very easy. When getting the 
 digits to sort by for each iteration, I simply added an extra step to convert the 
 char to a number between 0 and 25 before getting that iteration's digit value.
+7. Since bucket sort would normally fail with negative numbers, when calcualting
+the index of the bucket to add a value to, I added 50 so that the minimum index would
+be 50, and not a negative number.
