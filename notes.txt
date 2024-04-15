@@ -21,3 +21,5 @@ char to a number between 0 and 25 before getting that iteration's digit value.
 7. Since bucket sort would normally fail with negative numbers, when calcualting
 the index of the bucket to add a value to, I added 50 so that the minimum index would
 be 50, and not a negative number.
+8. There was nothing special about this problem in particular, just a standard
+quicksort implementation.
