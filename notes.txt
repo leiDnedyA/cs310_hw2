@@ -15,4 +15,6 @@ of the remianing array.
 the least significant non-zero digit out of all numbers in the input list.
 Next, the list is sorted repeatedly based on each individual digit from most to
 least significant. 
-6. 
+6. Adapting radix sort to work with characters was very easy. When getting the 
+digits to sort by for each iteration, I simply added an extra step to convert the 
+char to a number between 0 and 25 before getting that iteration's digit value.
