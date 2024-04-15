@@ -1,0 +1,18 @@
+1. Counting sort, O(len(count_arr) + len(output_arr)). Addapting it to
+work with lowercase letters is as simple as mapping each character to 
+a number from 0-25 for the count array, and mapping them back for the 
+result.
+2. Since counting sort is already a stable algorithm, it keeps the place
+its elements by default
+3. I went with a recursive implementation of merge for simplicity, that uses
+an argument "result" that gets passed into each recursive call. For each call,
+the next list in `lists` is merged into `result` until all lists have been merged.
+4. For this problem, I implemented a version of binary search, but rather than
+comparing the middle value to the target value, I found the difference between
+the two middle values to figure out of the result is in the right or left half
+of the remianing array.
+5. To make radix sort work with decimal numbers, I adapted it to first find
+the least significant non-zero digit out of all numbers in the input list.
+Next, the list is sorted repeatedly based on each individual digit from most to
+least significant. 
+6. 
